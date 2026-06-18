@@ -1575,7 +1575,7 @@ function FloatingCustomerChat({ cart, setCart, onAfterAgentCheckout }: FloatingC
               }}
               placeholder={
                 mode === 'bot'
-                  ? `Try: Add ${APP_CONFIG.chat.placeholderExampleQuantity} apples in my cart.`
+                  ? `Try: Add ${APP_CONFIG.chat.placeholderExampleQuantity} apples into my cart.`
                   : 'Type a message for the owner'
               }
               disabled={isBusy}
