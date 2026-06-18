@@ -5,7 +5,7 @@
 The deployed web application can be accessed here:
 
 ```txt
-https://fruit-store-six.vercel.app/
+https://fruit-store-public.vercel.app/
 ```
 
 ## GitHub Repository

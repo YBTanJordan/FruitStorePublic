@@ -204,7 +204,7 @@ const APP_CONFIG = {
     customerOrderHistoryItemsPerPage: 6,
 
     // Number of fruits shown per page in the customer's fruit catalogue.
-    customerFruitCatalogueItemsPerPage: 6,
+    customerFruitCatalogueItemsPerPage: 8,
 
     // Number of fruits shown per page in the owner's manage catalogue section.
     ownerManageCatalogueItemsPerPage: 6,
