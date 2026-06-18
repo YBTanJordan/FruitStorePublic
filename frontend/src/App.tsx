@@ -2308,7 +2308,6 @@ function CustomerPage({ cart, setCart } : {cart: CartItem[]; setCart:Dispatch<Se
   const [cartInterest, setCartInterest] = useState<Record<string, number>>({});
   const [orderHistoryRefreshTrigger, setOrderHistoryRefreshTrigger] = useState(0);
   const [fruitCataloguePage, setFruitCataloguePage] = useState(1);
-  const [cartAdjustmentMessage, setCartAdjustmentMessage] = useState<string | null>(null);
   const lastCartAdjustmentSignatureRef = useRef('');
   const fruitCatalogueItemsPerPage = APP_CONFIG.pagination.customerFruitCatalogueItemsPerPage;
   
@@ -2389,7 +2388,6 @@ function CustomerPage({ cart, setCart } : {cart: CartItem[]; setCart:Dispatch<Se
     const signature = `${notice}|${JSON.stringify(adjustment.nextCart)}`;
 
     setCart(adjustment.nextCart);
-    setCartAdjustmentMessage(notice);
 
     if (lastCartAdjustmentSignatureRef.current !== signature) {
       lastCartAdjustmentSignatureRef.current = signature;
@@ -2594,7 +2592,6 @@ function CustomerPage({ cart, setCart } : {cart: CartItem[]; setCart:Dispatch<Se
         ].join('\n');
 
         setCart(adjustment.nextCart);
-        setCartAdjustmentMessage(notice);
         alert(notice);
         return;
       }
