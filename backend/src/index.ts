@@ -63,7 +63,7 @@ interface CreatedOrder {
 // Only these frontend URLs are allowed to call the API from a browser.
 // This is part of CORS protection.
 const allowedOrigins = [
-  'https://fruit-store-six.vercel.app',
+  'https://fruit-store-public.vercel.app/',
   'http://localhost:5173'
 ];
 
